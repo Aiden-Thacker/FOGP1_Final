@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2004317435913272552}
   m_Layer: 0
   m_Name: Red Healer
-  m_TagString: Blue
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
