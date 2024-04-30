@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -699,6 +699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Mage
       objectReference: {fileID: 0}
+    - target: {fileID: 6386376237918854119, guid: 866e809d9eb39fd48b62c4e1fc21f01b, type: 3}
+      propertyPath: range
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -931,6 +935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Magic
       objectReference: {fileID: 0}
+    - target: {fileID: 8444714269851069493, guid: e18d9af63709d27b3b180892b4ad2500, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9e29aab974bb2241af6a3320db790d0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
