@@ -7,6 +7,7 @@ public class TargetingSystem : MonoBehaviour
 {
     public float range = 20.0f;
     public string targetTag;
+    public bool targetPrority = false;
     public GameObject FindTarget()
     {
         GameObject target = null;
@@ -25,6 +26,20 @@ public class TargetingSystem : MonoBehaviour
             }
         }
 
+        return target;
+    }
+
+    //Find the Target with the lowest health
+    public GameObject FindTargetPrority()
+    {
+        GameObject target = null;
+        
+        if(targetPrority)
+        {
+            //Health health = _other.GetComponent<Health>();
+            List<GameObject> possibleHealTargets = GameObject.FindGameObjectsWithTag(targetTag).ToList<GameObject>();
+
+        }
         return target;
     }
 }

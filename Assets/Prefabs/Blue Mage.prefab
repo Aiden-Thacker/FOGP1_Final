@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &144390325868817625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617926615654847916}
+  m_Layer: 0
+  m_Name: Spawn_Bullet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617926615654847916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144390325868817625}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 1.86, z: 0.398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2242997746750836109}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4345030381225358077
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,8 +190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1eadd0f3ae0403a4a5c07d3b1d611e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
+  range: 50
   targetTag: Red
+  targetPrority: 0
 --- !u!114 &3527492235331816183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +215,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     stateMachine: {fileID: 0}
-    targetFoundState: 
+    targetFoundState: ChaseState
   chaseState:
     stateStart:
       m_PersistentCalls:
@@ -260,7 +292,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6305534866199956420, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 617926615654847916}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
 --- !u!1 &965140149680087564 stripped
