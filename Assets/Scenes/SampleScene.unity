@@ -240,10 +240,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Mage
       objectReference: {fileID: 0}
-    - target: {fileID: 7571592835887634610, guid: 272d847336be80b4287a460cfe4da8e0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -732,10 +728,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Mage
       objectReference: {fileID: 0}
-    - target: {fileID: 4345030381225358077, guid: 866e809d9eb39fd48b62c4e1fc21f01b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -752,10 +744,6 @@ PrefabInstance:
     - target: {fileID: 6515911657262448224, guid: d66eaac4982125f4785203eb4fc1fd96, type: 3}
       propertyPath: m_Name
       value: Red Healer
-      objectReference: {fileID: 0}
-    - target: {fileID: 6515911657262448224, guid: d66eaac4982125f4785203eb4fc1fd96, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7268637301994492975, guid: d66eaac4982125f4785203eb4fc1fd96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -854,10 +842,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 261247511956476859, guid: 02044b17569ac8b45b52ee0c7792f7a7, type: 3}
-      propertyPath: targetPriority
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7496579530616414121, guid: 02044b17569ac8b45b52ee0c7792f7a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.3944025
@@ -901,10 +885,6 @@ PrefabInstance:
     - target: {fileID: 8746816132196654817, guid: 02044b17569ac8b45b52ee0c7792f7a7, type: 3}
       propertyPath: m_Name
       value: Blue Healer
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746816132196654817, guid: 02044b17569ac8b45b52ee0c7792f7a7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1296,10 +1276,6 @@ PrefabInstance:
     - target: {fileID: 3433482688890936157, guid: 9945b8d10d0daade78a43c3bf02f7bff, type: 3}
       propertyPath: m_Name
       value: Red Brawler
-      objectReference: {fileID: 0}
-    - target: {fileID: 3433482688890936157, guid: 9945b8d10d0daade78a43c3bf02f7bff, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5780025019141909416, guid: 9945b8d10d0daade78a43c3bf02f7bff, type: 3}
       propertyPath: m_LocalPosition.x

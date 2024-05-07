@@ -14,7 +14,6 @@ public class CastHealState : SimpleState
     {
         time = 0;
         gameObject = stateMachine.gameObject;
-        Debug.Log("The name of the GameObject is " + gameObject.name);
         
         if(staff == false)
         {

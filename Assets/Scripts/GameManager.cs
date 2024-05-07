@@ -6,10 +6,26 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance; // Singleton instance
 
+    public LoseMenu loseMenu; // For the player if the Blue side Loses 
+    public WinMenu winMenu; //For the player if the Blue side Wins
+
     // Lists to store objects with red and blue tags
     private List<GameObject> redObjects = new List<GameObject>();
     private List<GameObject> blueObjects = new List<GameObject>();
-
+    
+    private void Awake()
+    {
+        // Singleton pattern
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
     private void Start()
     {
         // Find all objects with the "Red" tag and add them to the redObjects list
@@ -54,8 +70,8 @@ public class GameManager : MonoBehaviour
     {
         if (blueObjects.Count == 0)
         {
-            // Trigger lose state
-            LoseState();
+            Debug.Log("Your Team Lost");
+            loseMenu.Lose();
         }
     }
 
@@ -63,34 +79,10 @@ public class GameManager : MonoBehaviour
     {
         if (redObjects.Count == 0)
         {
-            // Trigger lose state
-            WinState();
+            Debug.Log("Your Team Won");
+            winMenu.Win();
         }
     }
 
-    // Function to handle lose state
-    private void LoseState()
-    {
-        Debug.Log("You lose!");
-        // Add code to handle lose state (e.g., show game over screen)
-    }
-
-    private void WinState()
-    {
-        Debug.Log("You Win!");
-        // Add code to handle lose state (e.g., show game over screen)
-    }
-
-    private void Awake()
-    {
-        // Singleton pattern
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 }

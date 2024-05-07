@@ -16,7 +16,6 @@ public class HammerTimeState : SimpleState
     {
         time = 0.0f;
         gameObject = stateMachine.gameObject;
-        Debug.Log("The Game Objects name is " + gameObject.name);
 
         if (hammer == false)
             return;

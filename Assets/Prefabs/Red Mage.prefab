@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8062365926985445202}
   - component: {fileID: 2314550241401412604}
   - component: {fileID: 876170387844112955}
+  - component: {fileID: 2068861173693444335}
   m_Layer: 0
   m_Name: Red Mage
   m_TagString: Red
@@ -161,6 +162,51 @@ MonoBehaviour:
         m_CallState: 2
   maxHealth: 50
   currentHealth: 50
+--- !u!114 &2068861173693444335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7571592835887634610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa698d125cceb141b5d2769e68acbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: []
+  stateName: 
+  idleState:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+    targetFoundState: ChaseState
+  chaseState:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+    target: {fileID: 0}
+    speed: 7
+    attackRange: 10
+    attackStateName: CastMagicState
+  castMagicState:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+    wand: {fileID: 435051543262167986}
+    time: 0
 --- !u!1 &8022579741435766008
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +315,11 @@ PrefabInstance:
       addedObject: {fileID: 42075995171678401}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+--- !u!1 &435051543262167986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5027606829547627589, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+  m_PrefabInstance: {fileID: 4885342183246473207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1463100716340177971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6305534866199956420, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}

@@ -209,7 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 50
   targetTag: Red
-  targetPrority: 0
+  targetPriority: 0
 --- !u!114 &3527492235331816183
 MonoBehaviour:
   m_ObjectHideFlags: 0

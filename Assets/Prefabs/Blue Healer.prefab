@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 20
   targetTag: Blue
-  targetPriority: 0
+  targetPriority: 1
 --- !u!114 &6564633204213678360
 MonoBehaviour:
   m_ObjectHideFlags: 0
