@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class WinMenu : MonoBehaviour
 {
-    public bool didSurviveTime = false;
     public bool didWin = false;
     public GameObject winSection;
 
@@ -20,14 +19,6 @@ public class WinMenu : MonoBehaviour
     void Update()
     {
 
-    }
-
-    public void TimeToSurvive(bool timeOver)
-    {
-        if(timeOver)
-        {
-            didSurviveTime = true;
-        }
     }
 
     public void Win()
