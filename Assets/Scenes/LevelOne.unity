@@ -2046,6 +2046,9 @@ GameObject:
   - component: {fileID: 616235489}
   - component: {fileID: 616235488}
   - component: {fileID: 616235487}
+  - component: {fileID: 616235493}
+  - component: {fileID: 616235492}
+  - component: {fileID: 616235491}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -2139,6 +2142,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &616235491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616235486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6144e0d1eb5803c4f83c68da9d392609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  didWin: 0
+  winSection: {fileID: 0}
+--- !u!114 &616235492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616235486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63518bac5c00f5c46a99e0f473becc82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  didLose: 0
+  loseSection: {fileID: 0}
+--- !u!114 &616235493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616235486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e1b5554259b2640a59c3efed340bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGamePaused: 0
+  winState: {fileID: 0}
+  loseState: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
 --- !u!1 &644717762
 GameObject:
   m_ObjectHideFlags: 0
