@@ -22,7 +22,14 @@ public class ChaseState : SimpleState
     public override void UpdateState(float _dt)
     {
         // Find target
-        target = targetingSystem.FindTarget();
+        if(targetingSystem.targetPriority)
+        {
+            target = targetingSystem.FindTargetPriority();
+        }else
+        {
+            target = targetingSystem.FindTarget();
+        }
+        
 
         if (target == false)
             return;

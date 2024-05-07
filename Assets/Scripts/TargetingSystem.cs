@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using SuperPupSystems.Helper;
 
 public class TargetingSystem : MonoBehaviour
 {
     public float range = 20.0f;
     public string targetTag;
-    public bool targetPrority = false;
+    public bool targetPriority = false;
     public GameObject FindTarget()
     {
         GameObject target = null;
@@ -30,16 +31,32 @@ public class TargetingSystem : MonoBehaviour
     }
 
     //Find the Target with the lowest health
-    public GameObject FindTargetPrority()
+    public GameObject FindTargetPriority()
     {
         GameObject target = null;
-        
-        if(targetPrority)
-        {
-            //Health health = _other.GetComponent<Health>();
-            List<GameObject> possibleHealTargets = GameObject.FindGameObjectsWithTag(targetTag).ToList<GameObject>();
 
+        if (targetPriority)
+        {
+            List<GameObject> possibleHealTargets = GameObject.FindGameObjectsWithTag(targetTag).ToList();
+
+            float lowestHealth = float.MaxValue;
+            foreach (GameObject pt in possibleHealTargets)
+            {
+                //Should skip healer
+                if (pt == gameObject)
+                {
+                    continue;
+                }
+
+                Health health = pt.GetComponent<Health>();
+                if (health != null && health.currentHealth < lowestHealth)
+                {
+                    lowestHealth = health.currentHealth;
+                    target = pt;
+                }
+            }
         }
+
         return target;
     }
 }

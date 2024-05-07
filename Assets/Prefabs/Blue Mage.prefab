@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 617926615654847916}
+  - component: {fileID: 7891124530956863057}
   m_Layer: 0
   m_Name: Spawn_Bullet
   m_TagString: Untagged
@@ -31,6 +32,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2242997746750836109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7891124530956863057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144390325868817625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99833121ebd2f2a489e525e0aeca7a62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5
+  magicBullet: {fileID: 3451317846609833154, guid: e18d9af63709d27b3b180892b4ad2500, type: 3}
+  bulletTime: 0
+  spawnPoint: {fileID: 617926615654847916}
 --- !u!1 &4345030381225358077
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8464910735274164720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5847263127177965493}
+  - component: {fileID: 4418640782794198010}
+  - component: {fileID: 8390073277523582222}
+  - component: {fileID: 3379791011553537913}
+  - component: {fileID: 3092462290098206831}
+  m_Layer: 0
+  m_Name: Red Healing Ball Magic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5847263127177965493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464910735274164720}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.46503463, y: -2.6324968, z: 12.28484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2242276380867879550}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4418640782794198010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464910735274164720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad54517dc19258185960ef6d2f3a1b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeout:
+    m_PersistentCalls:
+      m_Calls: []
+  autoStart: 0
+  autoRestart: 0
+  countDownTime: 1
+  timeScale: 1
+--- !u!114 &8390073277523582222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464910735274164720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eadd0f3ae0403a4a5c07d3b1d611e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 20
+  targetTag: Red
+  targetPriority: 1
+--- !u!114 &3379791011553537913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464910735274164720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2a53cdd3b9dce4ab704ccebc5d77da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3092462290098206831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464910735274164720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ab43fbf1d545f4d83de9439c7a66da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  speed: 20
+  lifeTime: 10
+  destroyOnImpact: 1
+  hitTarget:
+    m_PersistentCalls:
+      m_Calls: []
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  tags: []
+--- !u!1001 &8551455585047269190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5847263127177965493}
+    m_Modifications:
+    - target: {fileID: 4880776252298523353, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_Name
+      value: Healing Magic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+--- !u!4 &2242276380867879550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7616420335451450680, guid: fce97881fc218e24eb44a315db6474d4, type: 3}
+  m_PrefabInstance: {fileID: 8551455585047269190}
+  m_PrefabAsset: {fileID: 0}
